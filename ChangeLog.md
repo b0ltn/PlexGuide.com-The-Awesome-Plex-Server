@@ -1,10 +1,39 @@
 ## Current Changes
 Current Changes will continued to be modified as known.
 
-### [5.041] Actively Working
+### [5.043]
 
 #### Added
-- None 
+- None
+
+#### Changed
+- Resolving Issues for Subdomains!
+- Updated Program menus to reflect new https:// for subdomains
+
+#### Removed
+- None
+
+-------------------------------------------------------
+## Past Changes
+Historical Documented Changes will be stored as below.
+
+### [5.042]
+
+#### Added
+- Ability to turn off ports (only use subdomains) and turn back on
+
+#### Changed
+- Bye NGINX-Reverse Proxy (wasn't used, but got rid of it from test menu)
+
+#### Removed
+- None
+
+### [5.041]
+
+#### Added
+- PyLoad application was added (From b0ltn)
+- Sickrage Added
+- Added Glances Terminal Tool
 
 #### Changed
 - Minor fixes for https://
@@ -13,10 +42,6 @@ Current Changes will continued to be modified as known.
 
 #### Removed
 - None
-
--------------------------------------------------------
-## Past Changes
-Historical Documented Changes will be stored as below.
 
 ### [5.040]
 

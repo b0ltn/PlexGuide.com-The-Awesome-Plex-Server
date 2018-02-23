@@ -21,6 +21,7 @@
   - { role: support, tags: ['support'] }
   - { role: organizr, tags: ['organizr'] }
   - { role: ombi, tags: ['ombi'] }
+  - { role: sickrage, tags: ['sickrage'] }
   - { role: htpcmanager, tags: ['htpcmanager'] }
   - { role: emby, tags: ['emby'] }
   - { role: sonarr, tags: ['sonarr'] }
@@ -40,7 +41,6 @@
   - { role: plex, tags: ['plex'] }
   - { role: plex-beta, tags: ['plex-beta'] }
   - { role: docker, tags: ['docker'] }
-  - { role: nginx, tags: ['nginx'] }
   - { role: medusa, tags: ['medusa'] }
   - { role: dockerfix, tags: ['dockerfix'] }
   - { role: watchtower, tags: ['watchtower'] }

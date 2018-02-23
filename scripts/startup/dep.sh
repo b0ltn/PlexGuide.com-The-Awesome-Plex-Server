@@ -30,7 +30,7 @@ echo "4. Installing Ansible Playbook & Supporting Components (Please Wait)"
 echo "5. Installing Dependicies & Docker - Please Wait"
 echo
     ansible-playbook /opt/plexguide/ansible/docker.yml
-    ansible-playbook /opt/plexguide/ansible/config.yml
+    ansible-playbook /opt/plexguide/ansible/config.yml --tags var
     ansible-playbook /opt/plexguide/ansible/plexguide.yml --tags preinstall
 echo ""
 echo "6. Installing Supporting Programs - Directories & Permissions (Please Wait)"
@@ -55,7 +55,7 @@ echo "8. Installing Portainer & Reverse Proxy (Please Wait)"
 
 # Installs Portainer
   ansible-playbook /opt/plexguide/ansible/plexguide.yml --tags portainer
-# Instlls Reverse Prox
+# Installs Reverse Prox
   ansible-playbook /opt/plexguide/ansible/plexguide.yml --tags traefik
 # Remove NGINX if it exists
 
@@ -81,7 +81,7 @@ echo "8. Installing Portainer & Reverse Proxy (Please Wait)"
     fi
 
    rm -r /var/plexguide/dep* 1>/dev/null 2>&1
-   touch /var/plexguide/dep33.yes
+   touch /var/plexguide/dep34.yes
 
 ############################################# Install a Post-Docker Fix ###################### END
 

@@ -16,7 +16,7 @@ then
 whiptail --title "Warning" --msgbox "You still have the VNC Container Running! Make sure to Destroy the Container via the VNC Menu!" 9 66
 fi
 
-file="/var/plexguide/dep33.yes"
+file="/var/plexguide/dep34.yes"
 if [ -e "$file" ]
 then
    touch /var/plexguide/message.no
@@ -38,7 +38,7 @@ fi
 while [ 1 ]
 do
 CHOICE=$(
-whiptail --title "Visit PlexGuide.com - v5.041" --menu "Make your choice" 19 43 12 \
+whiptail --title "Visit PlexGuide.com - v5.043" --menu "Make your choice" 20 43 13 \
    "1)" "Donation Menu (Please Turn On)" \
    "2)" "RClone & PlexDrive" \
    "3)" "Programs" \
@@ -50,7 +50,8 @@ whiptail --title "Visit PlexGuide.com - v5.041" --menu "Make your choice" 19 43 
    "9)" "PlexGuide: Update (Check ChangeLog)" \
    "10)" "PlexGuide: UnInstall" \
    "11)" "BETA: Uncapped Speeds" \
-   "12)" "Exit  "  3>&2 2>&1 1>&3
+   "12)" "BETA: Turn On/Off Ports" \
+   "13)" "Exit  "  3>&2 2>&1 1>&3
 )
 
 result=$(whoami)
@@ -112,6 +113,11 @@ case $CHOICE in
        ;;
 
    "12)")
+       clear
+       bash /opt/plexguide/scripts/menus/ports/ports.sh
+       ;;   
+
+   "13)")
        clear
        echo Remember, restart by typing:  plexguide
        exit
